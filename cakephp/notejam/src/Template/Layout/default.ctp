@@ -37,7 +37,10 @@
     	<div class="sixteen columns">
         	<h1 class="bold-header"><a href="#" class="header">note<span class="jam">jam:</span></a> <span> <?= $title ?></span></h1>
     	</div>
-    	<?= $this->fetch('content') ?>
+        <div class="sixteen columns content-area">
+            <?= $this->Flash->render() ?>
+            <?= $this->fetch('content') ?>
+        </div>
 		<hr class="footer" />
 	    <div class="footer">
 	    	<div>Notejam: <strong>CakePHP</strong> application</div>
