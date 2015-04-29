@@ -1,0 +1,11 @@
+<div class="thirteen columns content-area">
+  <form class="offset-by-six sign-in">
+    <label for="email">Email</label>
+    <input type="text" id="email">
+    <label for="password">Password</label>
+    <input type="password" id="password">
+    <label for="confirm-password">Confirm password</label>
+    <input type="password" id="confirm-password">
+    <input type="submit" value="Sign Up"> or <a href='#'>Sign in</a>
+  </form>
+</div>
