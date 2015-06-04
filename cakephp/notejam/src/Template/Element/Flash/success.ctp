@@ -1,3 +1,1 @@
-<div class="alert-area">
-    <div class="alert alert-success"><?= h($message) ?></div>
-</div>
+<div class="message success"><?= h($message) ?></div>
