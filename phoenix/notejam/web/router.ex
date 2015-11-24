@@ -16,7 +16,7 @@ defmodule Notejam.Router do
   scope "/", Notejam do
     pipe_through :browser # Use the default browser stack
 
-    get "/", PageController, :index
+    get "/", NotesController, :index
   end
 
   # Other scopes may use custom stacks.
