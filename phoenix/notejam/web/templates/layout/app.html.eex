@@ -32,12 +32,17 @@
   <div class="container">
     <div class="sixteen columns">
       <div class="sign-in-out-block">
+        <%= if @logged_in do %>
         komarserjio@gmail.com:&nbsp; <a href="#">Account settings</a>&nbsp;&nbsp;&nbsp;<a href="#">Sign out</a>
+        <% else %>
+        <a href="<%= users_path(@conn, :new) %>">Sign up</a>&nbsp;&nbsp;&nbsp;<a href="#">Sign in</a>
+        <% end %>
       </div>
     </div>
     <div class="sixteen columns">
       <h1 class="bold-header"><a href="<%= notes_path(@conn, :index) %>" class="header">note<span class="jam">jam: </span></a> <span><%= @title %></span></h1>
     </div>
+    <%= if @logged_in do %>
     <div class="three columns">
       <h4 id="logo">My pads</h4>
       <nav>
@@ -52,7 +57,7 @@
       <a href="#">New pad</a>
       </nav>
     </div>
-
+    <% end %>
     <%= @inner %>
 
     <hr class="footer" />
