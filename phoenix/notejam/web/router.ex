@@ -17,6 +17,7 @@ defmodule Notejam.Router do
     pipe_through :browser # Use the default browser stack
 
     get "/", NotesController, :index
+    get "/signup", UsersController, :new
   end
 
   # Other scopes may use custom stacks.
